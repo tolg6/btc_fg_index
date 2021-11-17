@@ -10,6 +10,7 @@ with the API and the conversion into a data frame will be done.
 <p>price link : <a href="https://min-api.cryptocompare.com/documentation" class="uri">https://min-api.cryptocompare.com/documentation</a>.</p>
 <p>Fear&Greed Index = <a href="https://alternative.me/crypto/fear-and-greed-index/" class="uri">https://alternative.me/crypto/fear-and-greed-index/</a>.</p>
 
+![btc](https://github.com/tolg6/btc_fg_index/blob/main/unnamed-chunk-8-1.png?raw=true)
 
 ## Libraries
 ```{r,warning = FALSE,message = FALSE}
@@ -85,5 +86,4 @@ library(ggfortify)
 btc_fg_ts = ts(btc_fg_data[,2:3],frequency = 365,start = c(2021,9,28))
 autoplot(ts(btc_fg_data[,2:3],frequency = 365,start = c(2021,9,28)),facets = T)+ylab("")+theme_minimal()
 ```
-![btc](https://github.com/tolg6/btc_fg_index/blob/main/unnamed-chuck-8-1.png?raw=true)
 
