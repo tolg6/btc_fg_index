@@ -1,12 +1,5 @@
 # Get Bitcoin Price - Fear & Greed Index
 
----
-title: 'Get Bitcoin Price-Fear&Greed Index from API'
-author: ""
-date: '2021-09-27'
-output: html_document
----
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -92,5 +85,5 @@ library(ggfortify)
 btc_fg_ts = ts(btc_fg_data[,2:3],frequency = 365,start = c(2021,9,28))
 autoplot(ts(btc_fg_data[,2:3],frequency = 365,start = c(2021,9,28)),facets = T)+ylab("")+theme_minimal()
 ```
-![btc](https://github.com/tolg6/btc_fg_index/blob/main/unnamed-chuck-4-1.png?raw=true)
+![btc](https://github.com/tolg6/btc_fg_index/blob/main/unnamed-chuck-8-1.png?raw=true)
 
